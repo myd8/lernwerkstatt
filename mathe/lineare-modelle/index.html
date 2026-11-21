@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Lernwerkstatt: Lineare Modelle">
+  <title>Lineare Modelle · Lernwerkstatt</title>
+  <script src="../../assets/site.js"></script>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt</a>
+  <div class="site">
+    <header class="topbar">
+      <a class="brand" href="../../index.html">Lernwerkstatt</a>
+      <nav aria-label="Fächer">
+          <a href="../../mathe/index.html" aria-current="true">Mathe</a>
+          <a href="../../deutsch/index.html">Deutsch</a>
+          <a href="../../english/index.html" lang="en">English</a>
+          <a href="../../geschichte/index.html">Geschichte/GW</a>
+      </nav>
+      <button class="theme-toggle" type="button" hidden></button>
+    </header>
+    <main id="inhalt" tabindex="-1">
+
+      <article class="math-note">
+        <header class="note-head">
+          <p class="note-label"><a href="../index.html">← Mathe</a></p>
+          <h1>Lineare Modelle</h1>
+        </header>
+        <div class="math-grid">
+          <section>
+            <h2>Formel</h2>
+            <p class="formula"><i>y</i> = <i>mx</i> + <i>b</i></p>
+            <ul class="note-list">
+              <li><strong><i>m</i>:</strong> Steigung, Δ<i>y</i> ÷ Δ<i>x</i>.</li>
+              <li><strong><i>b</i>:</strong> Startwert, also <i>y</i> bei <i>x</i> = 0.</li>
+              <li>Gleich große Änderungen in <i>x</i> → gleich große Änderungen in <i>y</i>.</li>
+            </ul>
+            <h2>Beispiel: Fahrradverleih</h2>
+            <p>2 € Grundgebühr + 2 € pro Stunde → <i>y</i> = 2<i>x</i> + 2.</p>
+            <table>
+              <thead><tr><th scope="col">Stunden</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th></tr></thead>
+              <tbody><tr><th scope="row">Preis in €</th><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td></tr></tbody>
+            </table>
+            <p>4 Stunden: 2 · 4 + 2 = <strong>10 €</strong>.</p>
+          </section>
+          <section>
+            <h2>Graph</h2>
+            <svg class="chart" viewBox="0 0 320 225" role="img" aria-labelledby="chart-title">
+              <title id="chart-title">Preis nach Stunden bei 2 Euro Grundgebühr</title>
+              <path id="model-area" d="M42 157L266 69V179H42Z"/>
+              <path class="chart-grid" d="M42 25H277M42 69H277M42 113H277M42 157H277M98 25V179M154 25V179M210 25V179M266 25V179" fill="none"/>
+              <path class="chart-axes" d="M42 20V179H280" stroke-width="1.5" fill="none"/>
+              <g class="chart-labels" font-size="10" text-anchor="end"><text x="37" y="29">14</text><text x="37" y="73">10</text><text x="37" y="117">6</text><text x="37" y="161">2</text><text x="39" y="16">€</text></g>
+              <g class="chart-labels" font-size="10" text-anchor="middle"><text x="42" y="194">0</text><text x="98" y="194">1</text><text x="154" y="194">2</text><text x="210" y="194">3</text><text x="266" y="194">4</text><text x="160" y="212">Stunden</text></g>
+              <line class="chart-line" x1="42" y1="157" x2="266" y2="69" stroke-width="3" stroke-linecap="round"/>
+              <circle class="chart-origin" cx="42" cy="157" r="4"/>
+              <circle class="chart-point" cx="266" cy="69" r="5" stroke-width="2.5"/>
+            </svg>
+            <p class="figure-note">Startpunkt (0 | 2) · nach 4 Stunden (4 | 10)</p>
+          </section>
+        </div>
+        <section>
+          <h2>Grenze des Modells</h2>
+          <p>Rabatt ab der dritten Stunde → neuer Stundenpreis → andere Steigung.</p>
+        </section>
+
+      </article>
+    </main>
+    <footer>Eigene Lernnotizen und Beispiele</footer>
+  </div>
+</body>
+</html>
