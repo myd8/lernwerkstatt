@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Lernwerkstatt: Analphabetenquote und Lebenserwartung">
+  <title>Analphabetenquote und Lebenserwartung · Lernwerkstatt</title>
+  <script src="../../assets/site.js"></script>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt</a>
+  <div class="site">
+    <header class="topbar">
+      <a class="brand" href="../../index.html">Lernwerkstatt</a>
+      <nav aria-label="Fächer">
+          <a href="../../mathe/index.html" aria-current="true">Mathe</a>
+          <a href="../../deutsch/index.html">Deutsch</a>
+          <a href="../../english/index.html" lang="en">English</a>
+          <a href="../../geschichte/index.html">Geschichte/GW</a>
+      </nav>
+      <button class="theme-toggle" type="button" hidden></button>
+    </header>
+    <main id="inhalt" tabindex="-1">
+
+      <article class="math-note">
+        <header class="note-head">
+          <p class="note-label"><a href="../index.html">← Mathe</a></p>
+          <h1>Analphabetenquote und Lebenserwartung</h1>
+        </header>
+        <div class="math-grid">
+          <section>
+            <h2>Fallende Gerade</h2>
+            <ul class="note-list">
+              <li><strong>Abgelesen:</strong> A (0 | 80), B (60 | 60). <i>x</i> ist die Analphabetenquote in Prozent, <i>y</i> die Lebenserwartung in Jahren.</li>
+              <li><strong>Steigung:</strong> (60 − 80) ÷ (60 − 0) = −1/3. Ein Prozentpunkt mehr entspricht im Modell ungefähr einem Dritteljahr weniger, nicht 0,33 Prozent weniger.</li>
+              <li><strong>Achsenabschnitt:</strong> Bei 0 % ergibt das Modell 80 Jahre.</li>
+            </ul>
+            <p class="formula"><i>L</i>(<i>x</i>) = 80 − <i>x</i>/3</p>
+          </section>
+          <section>
+            <h2>Skizze</h2>
+            <figure class="math-visual">
+              <svg viewBox="0 0 360 218" role="img" aria-labelledby="life-title life-desc">
+                <title id="life-title">Fallende Modellgerade für Analphabetenquote und Lebenserwartung</title>
+                <desc id="life-desc">Von A bei null Prozent und 80 Jahren fällt die Gerade zu B bei 60 Prozent und 60 Jahren. Andere Messpunkte sind nicht eingezeichnet.</desc>
+                <path class="chart-grid" d="M58 60H332M58 100H332M58 140H332M142 32V180M226 32V180M310 32V180" fill="none"/>
+                <path class="chart-axes" d="M58 31V180H332" stroke-width="1.5" fill="none"/>
+                <g class="chart-labels" font-size="13" text-anchor="end"><text x="48" y="64">80</text><text x="48" y="104">70</text><text x="48" y="144">60</text><text x="48" y="184">50</text></g>
+                <g class="chart-labels" font-size="13" text-anchor="middle"><text x="58" y="197">0</text><text x="142" y="197">20</text><text x="226" y="197">40</text><text x="310" y="197">60</text><text x="184" y="216">Analphabetenquote in %</text></g>
+                <text class="chart-labels" x="58" y="17" font-size="13">Lebenserwartung in Jahren</text>
+                <line class="chart-line" x1="58" y1="60" x2="310" y2="140" stroke-width="2.5" stroke-linecap="round"/>
+                <circle class="chart-point" cx="58" cy="60" r="4.5" stroke-width="2"/>
+                <circle class="chart-point" cx="310" cy="140" r="4.5" stroke-width="2"/>
+                <g class="diagram-text"><text x="67" y="50">A</text><text x="318" y="133">B</text></g>
+              </svg>
+              <figcaption>Nur die zwei Punkte aus der Rechnung, nicht das ursprüngliche Streudiagramm.</figcaption>
+            </figure>
+          </section>
+        </div>
+        <section>
+          <h2>Rückwärts rechnen</h2>
+          <p class="formula">75 = 80 − <i>x</i>/3 → <i>x</i> = 15</p>
+          <ul class="note-list">
+            <li>75 Jahre entsprechen in dieser Modellgerade einer Quote von 15 %. Mit einer gerundeten Steigung kann das Ergebnis leicht abweichen.</li>
+            <li>Eine fallende Gerade zeigt einen negativen Zusammenhang. Sie zeigt nicht, ob die Analphabetenquote die Ursache ist.</li>
+          </ul>
+        </section>
+
+      </article>
+    </main>
+    <footer>Eigene Lernnotizen und Beispiele</footer>
+  </div>
+</body>
+</html>

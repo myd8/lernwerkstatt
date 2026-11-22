@@ -77,6 +77,18 @@ th:first-child { text-align: left; }
 .chart-point { fill: var(--paper); stroke: var(--accent); }
 #model-area { fill: var(--chart); }
 .figure-note { color: var(--muted); font-size: .86rem; }
+.math-visual { max-width: 430px; margin: 16px 0 0; padding: 12px; border: 1px solid var(--line); background: var(--wash); }
+.math-visual svg { display: block; width: 100%; height: auto; }
+.math-visual figcaption { margin-top: 6px; color: var(--muted); font-size: .86rem; }
+.visual-title { margin-bottom: 10px; font-weight: 650; }
+.diagram-box { fill: var(--paper); stroke: var(--control); }
+.diagram-solid { fill: var(--accent); }
+.diagram-soft { fill: var(--chart); }
+.diagram-outline, .diagram-grid { fill: none; stroke: var(--control); }
+.diagram-contrast { fill: none; stroke: var(--paper); }
+.diagram-hatch { fill: none; stroke: var(--accent); }
+.diagram-text { fill: var(--ink); font-size: 14px; font-weight: 600; }
+.diagram-label { fill: var(--muted); font-size: 13px; }
 .topic-index { border-bottom: 1px solid var(--line); margin: -11px 0 21px; padding-bottom: 13px; }
 .topic-index ul { display: flex; flex-wrap: wrap; gap: 6px 19px; list-style: none; margin: 0; padding: 0; }
 .topic-index a { font-size: .86rem; color: var(--muted); }
