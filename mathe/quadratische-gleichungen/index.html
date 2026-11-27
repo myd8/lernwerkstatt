@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Quadratische Gleichungen durch Wurzelziehen, Ausklammern und mit der p-q-Formel lösen.">
+  <title>Quadratische Gleichungen · Lernwerkstatt</title>
+  <script src="../../assets/site.js"></script>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt</a>
+  <div class="site">
+    <header class="topbar">
+      <a class="brand" href="../../index.html">Lernwerkstatt</a>
+      <nav aria-label="Fächer">
+        <a href="../index.html" aria-current="true">Mathe</a>
+        <a href="../../deutsch/index.html">Deutsch</a>
+        <a href="../../english/index.html" lang="en">English</a>
+        <a href="../../geschichte/index.html">Geschichte/GW</a>
+      </nav>
+      <button class="theme-toggle" type="button" hidden></button>
+    </header>
+    <main id="inhalt" tabindex="-1">
+      <article class="math-note">
+        <header class="note-head">
+          <p class="note-label"><a href="../index.html">← Mathe</a></p>
+          <h1>Quadratische Gleichungen</h1>
+          <p class="lead">Unterricht vom <time datetime="2026-11-26">26. November 2026</time></p>
+        </header>
+        <nav class="topic-index" aria-label="Auf dieser Seite">
+          <ul>
+            <li><a href="#wurzelziehen">Wurzelziehen</a></li>
+            <li><a href="#ausklammern">Ausklammern</a></li>
+            <li><a href="#pq-formel">p-q-Formel</a></li>
+            <li><a href="#ueben">Üben</a></li>
+          </ul>
+        </nav>
+        <section id="wurzelziehen" class="topic">
+          <h2>Wurzelziehen</h2>
+          <p>Steht <i>x</i>² allein auf einer Seite, entscheidet die Zahl auf der anderen Seite über die reellen Lösungen.</p>
+          <ul class="note-list">
+            <li><i>x</i>² = 16 hat zwei Lösungen, <i>x</i> = 4 und <i>x</i> = −4. Beide Zahlen ergeben beim Quadrieren 16.</li>
+            <li><i>x</i>² = 0 hat genau eine Lösung, <i>x</i> = 0.</li>
+            <li><i>x</i>² = −9 hat keine reelle Lösung. Das Quadrat jeder reellen Zahl ist größer als oder gleich 0.</li>
+          </ul>
+        </section>
+        <section id="ausklammern" class="topic">
+          <h2>Ausklammern und Satz vom Nullprodukt</h2>
+          <p>Stehen nur Terme mit <i>x</i> auf einer Seite und 0 auf der anderen, kannst du <i>x</i> ausklammern. Ein Produkt ist 0, wenn mindestens einer seiner Faktoren 0 ist.</p>
+          <p class="formula">5<i>x</i>² + 20<i>x</i> = 0<br>5<i>x</i>(<i>x</i> + 4) = 0<br><i>x</i> = 0 oder <i>x</i> + 4 = 0<br><i>L</i> = {−4, 0}</p>
+          <p>Beim Teilen durch <i>x</i> würde die Lösung <i>x</i> = 0 verloren gehen.</p>
+        </section>
+        <section id="pq-formel" class="topic">
+          <h2>Die p-q-Formel</h2>
+          <p>Bringe die Gleichung in die Form <i>x</i>² + <i>px</i> + <i>q</i> = 0. Steht vor <i>x</i>² ein Faktor ungleich 1, teile die ganze Gleichung zuerst durch diesen Faktor. Lies <i>p</i> und <i>q</i> mit ihren Vorzeichen ab.</p>
+          <p class="formula">
+            <math display="block">
+              <msub><mi>x</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub>
+              <mo>=</mo><mo>−</mo><mfrac><mi>p</mi><mn>2</mn></mfrac><mo>±</mo>
+              <msqrt><msup><mrow><mo>(</mo><mfrac><mi>p</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>−</mo><mi>q</mi></msqrt>
+            </math>
+          </p>
+          <p>Der Ausdruck unter der Wurzel bestimmt die Anzahl der reellen Lösungen. Ist er positiv, gibt es zwei. Bei 0 gibt es eine. Ist er negativ, gibt es keine.</p>
+          <h3>Beispiel mit <i>p</i> = −8 und <i>q</i> = 15</h3>
+          <p class="formula"><i>x</i>² − 8<i>x</i> + 15 = 0<br><i>x</i> = 4 ± √(16 − 15) = 4 ± 1<br><i>L</i> = {3, 5}</p>
+        </section>
+        <section id="ueben" class="topic">
+          <h2>Üben</h2>
+          <p>Bestimme zuerst <i>p</i> und <i>q</i>. Löse anschließend beide Gleichungen und prüfe deine Ergebnisse.</p>
+          <ol class="note-list">
+            <li><i>x</i>² − 14<i>x</i> + 24 = 0</li>
+            <li><i>x</i>² − 8<i>x</i> − 65 = 0</li>
+          </ol>
+          <details>
+            <summary>Rechenwege anzeigen</summary>
+            <ol class="note-list">
+              <li><i>x</i> = 7 ± √(49 − 24) = 7 ± 5. Daraus folgt <i>L</i> = {2, 12}.</li>
+              <li>Hier ist <i>q</i> = −65. Deshalb gilt <i>x</i> = 4 ± √(16 + 65) = 4 ± 9. Daraus folgt <i>L</i> = {−5, 13}.</li>
+            </ol>
+          </details>
+        </section>
+      </article>
+    </main>
+    <footer>Eigene Lernnotizen und Beispiele</footer>
+  </div>
+</body>
+</html>

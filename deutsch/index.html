@@ -9,6 +9,7 @@
   <meta name="description" content="Lernwerkstatt: Deutsch">
   <title>Deutsch · Lernwerkstatt</title>
   <script src="../assets/site.js"></script>
+  <script src="../assets/notes-export.js" defer></script>
   <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
@@ -27,7 +28,10 @@
     <main id="inhalt" tabindex="-1">
 
       <header class="note-head">
-        <h1>Deutsch</h1>
+        <div class="subject-title">
+          <h1>Deutsch</h1>
+          <button class="notes-export" type="button" data-notes-export="deutsch-notizen.md" hidden>Notizen exportieren</button>
+        </div>
         <p class="lead">Notizen zu Textsorten, Argumentation und Analyse.</p>
       </header>
       <nav class="topic-index" aria-label="Themen"><ul><li><a href="#inhaltsangabe">Inhaltsangabe</a></li>

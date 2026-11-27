@@ -9,6 +9,7 @@
   <meta name="description" content="Lernwerkstatt: English">
   <title>English · Lernwerkstatt</title>
   <script src="../assets/site.js"></script>
+  <script src="../assets/notes-export.js" defer></script>
   <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
@@ -27,7 +28,10 @@
     <main id="inhalt" tabindex="-1">
 
       <header class="note-head">
-        <h1>English</h1>
+        <div class="subject-title">
+          <h1>English</h1>
+          <button class="notes-export" type="button" data-notes-export="english-notizen.md" lang="de" hidden>Notizen exportieren</button>
+        </div>
         <p class="lead">Grammar, vocabulary and reading notes.</p>
       </header>
       <nav class="topic-index" aria-label="Topics"><ul><li><a href="#quantifiers">Quantifiers</a></li>

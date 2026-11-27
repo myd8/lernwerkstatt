@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="no-referrer">
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="Lernwerkstatt: Mathe">
   <title>Mathe · Lernwerkstatt</title>
   <script src="../assets/site.js"></script>
+  <script src="../assets/notes-export.js" defer></script>
   <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
@@ -26,9 +27,13 @@
     </header>
     <main id="inhalt" tabindex="-1">
 
-      <h1>Mathe</h1>
-      <p class="lead">Notizen zu linearen Modellen und zur Bruchrechnung.</p>
+      <div class="subject-title">
+        <h1>Mathe</h1>
+        <button class="notes-export" type="button" data-notes-export="mathe-notizen.md" hidden>Notizen exportieren</button>
+      </div>
+      <p class="lead">Notizen zu Gleichungen, linearen Modellen und zur Bruchrechnung.</p>
       <ul class="subject-list">
+<li><a class="subject-row" href="quadratische-gleichungen/index.html"><strong>Quadratische Gleichungen</strong><span class="subject-topic">Wurzelziehen, Ausklammern und die p-q-Formel</span><span class="subject-arrow" aria-hidden="true">→</span></a></li>
 <li><a class="subject-row" href="lineare-modelle/index.html"><strong>Bildungsjahre und Einkommen</strong><span class="subject-topic">Steigende Gerade: zwei Punkte, Steigung und Achsenabschnitt</span><span class="subject-arrow" aria-hidden="true">→</span></a></li>
 <li><a class="subject-row" href="lebenserwartung/index.html"><strong>Analphabetenquote und Lebenserwartung</strong><span class="subject-topic">Fallende Gerade: negative Steigung und Prozentpunkte</span><span class="subject-arrow" aria-hidden="true">→</span></a></li>
 <li><a class="subject-row" href="brueche-erweitern-und-kuerzen/index.html"><strong>Brüche erweitern und kürzen</strong><span class="subject-topic">Zähler, Nenner und gleichwertige Brüche</span><span class="subject-arrow" aria-hidden="true">→</span></a></li>
