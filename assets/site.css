@@ -67,7 +67,8 @@ footer { padding: 15px 0 24px; margin-top: 54px; border-top: 1px solid var(--lin
 .note-list + h2 { margin-top: 22px; }
 .math-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, .86fr); gap: 30px; align-items: start; }
 .math-grid > section + section { border-left: 1px solid var(--line); padding-left: 25px; }
-.formula { margin: 13px 0; padding: 6px 13px; border-left: 2px solid var(--accent); background: var(--wash); font-size: 1.28rem; }
+.formula { margin: 13px 0; padding: 8px 13px; border-left: 2px solid var(--accent); background: var(--wash); font-size: 1.28rem; overflow-x: auto; }
+.formula math[display="block"] { margin: 0; }
 table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: .9rem; text-align: center; }
 th, td { padding: 6px 3px; border-bottom: 1px solid var(--line); }
 th:first-child { text-align: left; }

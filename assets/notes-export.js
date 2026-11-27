@@ -3,17 +3,6 @@
   const main = document.querySelector("main");
   const title = main.querySelector("h1").textContent.trim();
 
-  function mathText(node) {
-    const parts = Array.from(node.children, mathText);
-    switch (node.localName) {
-      case "mfrac": return `(${parts[0]})/(${parts[1]})`;
-      case "msub": return `${parts[0]}_(${parts[1]})`;
-      case "msup": return `(${parts[0]})^(${parts[1]})`;
-      case "msqrt": return `√(${parts.join("")})`;
-      default: return parts.length ? parts.join("") : node.textContent.trim();
-    }
-  }
-
   function markdown(node, base, headingOffset = 0) {
     if (node.nodeType === Node.TEXT_NODE) return node.data.replace(/\s+/g, " ");
     if (node.nodeType !== Node.ELEMENT_NODE) return "";
@@ -34,7 +23,12 @@
       case "sup": return `^(${children()})`;
       case "code": return `\`${children()}\``;
       case "a": return `[${children()}](<${new URL(node.getAttribute("href"), base).href}>)`;
-      case "math": return `\`${mathText(node)}\``;
+      case "math": {
+        const tex = node.querySelector('annotation[encoding="application/x-tex"]')?.textContent.trim();
+        if (!tex) return children();
+        return node.getAttribute("display") === "block" ? `\n\n$$\n${tex}\n$$\n\n` : `$${tex}$`;
+      }
+      case "annotation": return "";
       case "svg": {
         const description = ["title", "desc"].map(name => node.querySelector(name)?.textContent.trim()).filter(Boolean);
         return description.length ? `\n\n${description.join(" — ")}\n\n` : "";
